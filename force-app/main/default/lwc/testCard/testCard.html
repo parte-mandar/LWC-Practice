@@ -1,0 +1,31 @@
+<template>
+    <lightning-card>
+        <lightning-layout multiple-rows>
+         <lightning-layout-item size="12" small-device-size="9" padding="around-small">
+           <lightning-tabset>
+               <lightning-tab label="Item one">
+                   <div class="slds-m-bottom_small">
+                     <c-scope-notification message="Hello notification!" theme="light">
+                     </c-scope-notification>
+                   </div>
+               </lightning-tab>
+               <lightning-tab label="Item two">
+                   <div class="slds-m-bottom_small">
+                    <c-scope-notification message="Hello notification!" theme="dark">
+                    </c-scope-notification>
+                  </div>
+               </lightning-tab>
+               <lightning-tab label="Item three">
+                <div class="slds-m-bottom_small">
+                 <c-scope-notification message="Hello notification!" theme="success">
+                 </c-scope-notification>
+               </div>
+            </lightning-tab>
+           </lightning-tabset>
+          </lightning-layout-item>
+          <lightning-layout-item size="12" small-device-size="3" padding="around-small">
+            <p>Sidebar Content Goes Here</p>
+         </lightning-layout-item>
+       </lightning-layout>
+     </lightning-card>
+</template>
